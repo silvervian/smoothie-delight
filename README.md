@@ -1,3 +1,3 @@
 # Smoothie Delight
 
-LIVE: 
+LIVE: https://silvervian.github.io/smoothie-delight/dist/

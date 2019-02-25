@@ -1,19 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Open+Sans:300,400,700');
 @import url('https://use.fontawesome.com/releases/v5.7.1/css/all.css');
+
+
 body {
-  font-family: sans-serif;
-  line-height: 1.7;
+  color: #3a3a3a;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
   font-weight: 400;
-  color: rgb(0, 0, 0);
+  line-height: 2.4rem;
 }
 
 .primary {
-
+  color: #ffffff;
+  font-family: Courgette;
+  font-size: 9.2rem;
+  font-weight: 400;
+  line-height: 9.2rem;
+  
+  @include media(small) {
+    font-size: 7.2rem;
+    line-height: 7.2rem;
+  }
 }
 
 .secondary {
-
+  color: #3a3a3a;
+  font-family: Courgette;
+  font-size: 4.7rem;
+  font-weight: 400;
+  line-height: 4.7rem;
+  
+  // @include media(small) {
+  //   font-size: 3.3rem;
+  //   line-height: 3.3rem;
+  // }
+  
+  &--darker {
+    color: #0f1a21;
+  }
+  &--blood {
+    color: #f94e48;
+  }
 }
 
 .tertiary {
 
+}
+
+.text {
+
+  &--red {
+    color: #f94e48;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
 }

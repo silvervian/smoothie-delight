@@ -1,0 +1,42 @@
+.hero {
+  padding: 0 1rem;
+  height: 100vh;
+  background: linear-gradient(120deg, rgb(0,0,0) 10%, transparent) fixed, url(../../img/hero-img.jpg) no-repeat center fixed / cover ;
+
+  display: grid;
+  grid-template-columns: 1fr auto 4fr;
+  align-content: center;
+
+
+  &__primary {
+    grid-column: 2;
+
+    @include media(medium) {
+      text-align: center;
+      // justify-self: center;
+    }
+  }
+
+  &__desc {
+    grid-row: 2;
+    grid-column: 2;
+    
+    max-width: 584px;
+    margin-top: 3rem;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 3.8rem;
+    font-weight: 300;
+    line-height: 4.2rem;
+    
+    @include media(small) {
+      font-size: 3.5rem;
+      line-height: 3.8rem;
+    }
+    
+    @include media(medium) {
+      justify-self: center;
+      text-align: center;
+    }
+  }
+}
