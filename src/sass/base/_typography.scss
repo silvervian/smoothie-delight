@@ -15,25 +15,32 @@ body {
   font-family: Courgette;
   font-size: 9.2rem;
   font-weight: 400;
-  line-height: 9.2rem;
+  line-height: 10.2rem;
   
   @include media(small) {
     font-size: 7.2rem;
-    line-height: 7.2rem;
+    line-height: 8.2rem;
   }
 }
 
 .secondary {
+  text-align: center;
+  position: relative;
   color: #3a3a3a;
   font-family: Courgette;
   font-size: 4.7rem;
   font-weight: 400;
-  line-height: 4.7rem;
+  line-height: 5.7rem;
   
-  // @include media(small) {
-  //   font-size: 3.3rem;
-  //   line-height: 3.3rem;
-  // }
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: 50%;
+    width: 43px;
+    height: 13px;
+    transform: translateX(-50%);
+    background: url(../../img/dzyndzel.png) no-repeat;
+  }
   
   &--darker {
     color: #0f1a21;
