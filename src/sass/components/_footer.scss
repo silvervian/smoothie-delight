@@ -1,0 +1,15 @@
+.footer {
+  padding: 3.7rem 1rem;
+  background: #000000;
+  display: flex;
+  justify-content: center;
+
+  &__copy {
+    text-align: center;
+    color: #a8a8a8;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 42px;
+  }
+}

@@ -1,0 +1,30 @@
+.button {
+
+  &--scroll {
+    position: relative;
+    position: absolute;
+    bottom: 20px; left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+
+    &:hover &::before {
+      animation-play-state: paused;
+    }
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 7px ;left: 50%;
+      transform: translateX(-50%);
+      width: 7px;
+      height: 10px;
+      background: #fff;
+      border-radius: 50%;
+      opacity: 1;
+      animation: mouse 1.5s infinite;
+    }
+  }
+}
