@@ -45,6 +45,8 @@ html {
 
 body {
   box-sizing: border-box;
+
+  // working on Firefox not on Chrome
   scroll-behavior: smooth;
 }
 

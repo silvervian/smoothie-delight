@@ -7,7 +7,8 @@ function init() {
       if (empty === '#') return;
 
       document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
+        behavior: 'smooth',
+        block: 'start'
       });
     });
   });
