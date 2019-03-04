@@ -1,0 +1,16 @@
+.comments {
+  background: url(../../img/comments-bg.jpg) no-repeat center / cover;
+  background-color: #161616;
+  padding: 10rem 1rem;
+
+  &__desc {
+    margin-top: 7rem;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+.owl-wrapper {
+  margin: 0 auto;
+  max-width: 120rem;
+}

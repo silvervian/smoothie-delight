@@ -1,0 +1,17 @@
+.owl-item {
+  opacity: .5;
+  transition: .2s;
+  backface-visibility: hidden;
+  
+  &.active {
+    transform: scale(0.8);
+  }
+}
+
+.owl-carousel {
+  
+  & .center {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

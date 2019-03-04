@@ -1,0 +1,37 @@
+.testimonial {
+  padding-top: 3rem; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & > * {
+    margin: 1rem 0;
+  }
+
+  &__avatar {
+    max-width: 221px;
+    max-height: 221px;
+    border-radius: 50%; 
+    box-shadow: 0 0 40px 25px #000000;
+    border: 5px solid rgba(207,77,77,0.199);
+  }
+
+  &__name {
+    color: #ffffff;
+    font-family: Courgette;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 42px;
+  }
+
+  &__desc {
+    max-width: 35rem;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #ffffff;
+    backface-visibility: hidden;    
+  }
+}
+

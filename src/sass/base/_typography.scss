@@ -31,6 +31,7 @@ body {
   font-size: 4.7rem;
   font-weight: 400;
   line-height: 5.7rem;
+
   
   &::before {
     content: '';
@@ -40,6 +41,14 @@ body {
     height: 13px;
     transform: translateX(-50%);
     background: url(../../img/dzyndzel.png) no-repeat;
+  }
+
+  &--white {
+    color: #fff;
+
+    &:before {
+      background: url(../../img/dzyndzel-white.png) no-repeat;
+    }
   }
   
   &--darker {
